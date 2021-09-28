@@ -25,7 +25,7 @@ instructor: [
 ]
 helper: [
 "Danika MacDonell",
-"Robin Newhouse"
+"Robin Newhouse",
 "Mark Neubauer",
 "Zach Marshall",
 "Nils Krumnack"
