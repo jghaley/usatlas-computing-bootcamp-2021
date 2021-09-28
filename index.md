@@ -14,14 +14,14 @@ humantime: "11:00 am - 6:00 pm EDT (UTC-5) <br> 10:00 am - 5:00 pm CDT (UTC-6) <
 startdate: 2021-10-18      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
 enddate: 2021-10-22        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
 instructor: [
+"Joseph Haley",
+"Cecilia Duran",
 "Matthew Feickert",
 "Giordon Stark",
 "Elizabeth Wickes",
 "Karol Krizka",
 "Amber Roepe",
 "Henry Schreiner",
-"Joseph Haley",
-"Cecilia Duran"
 ]
 helper: [
 "Danika MacDonell",
@@ -106,6 +106,8 @@ the pitch.
 {% include dc/intro.html %}
 {% elsif site.carpentry == "lc" %}
 {% include lc/intro.html %}
+{% elsif site.carpentry == "atlas" %}
+{% include atlas/intro.html %}
 {% endif %}
 
 {% if site.pilot %}
@@ -124,6 +126,8 @@ workshop is only open to people from a particular institution.
 {% include dc/who.html %}
 {% elsif site.carpentry == "lc" %}
 {% include lc/who.html %}
+{% elsif site.carpentry == "atlas" %}
+{% include atlas/who.html %}
 {% endif %}
 
 {% comment %}
@@ -190,9 +194,15 @@ Modify the block below if there are any special requirements.
     Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on.
   {% else %}
     Participants must have access to a computer with a
-    Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on.
+    Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on. 
   {% endif %}
-  They should have a few specific software packages installed (listed <a href="#setup">below</a>).
+  <em>
+    <strong>
+      <font color="red">
+      All work will be carried out on the UChicago Analysis Facilty.  Before the start of the workshop, you must create an account on the UChicago Analysis Facilty (instructions <a href="#setup">below</a>) and be able to ssh into the UChicago system. 
+      </font>
+    </strong>
+  </em>
 </p>
 
 {% comment %}
@@ -205,7 +215,7 @@ special instructions.
   <strong>Accessibility:</strong>
 {% if online == "false" %}
   We are committed to making this workshop
-  accessible to everybody.  For workshops at a physical location, the workshop organizers have checked that:
+  accessible to everybody. The workshop organizers have checked that:
 </p>
 <ul>
   <li>The room is wheelchair / scooter accessible.</li>
@@ -220,9 +230,9 @@ special instructions.
   attempt to provide them.
 </p>
 {% else %}
-  We are dedicated to providing a positive and accessible learning environment for all. Please
-  notify the instructors in advance of the workshop if you require any accommodations or if there is
-  anything we can do to make this workshop more accessible to you.
+  We are dedicated to providing a positive and accessible learning environment for all.
+  Captions will be provided for the full bootcamp by <a href="https://whitecoatcaptioning.com/">White Coat Captioning</a>.
+  Please notify the instructors in advance of the bootcamp if you require any accommodations or if there is anything we can do to make this bootcamp more accessible to you.
 </p>
 {% endif %}
 
@@ -251,13 +261,13 @@ Display the contact email address set in the configuration file.
   for more information.
 </p>
 
+{% comment%}
 <p id="roles">
   <strong>Roles:</strong>
   To learn more about the roles at the workshop (who will be doing what),
   refer to <a href="https://carpentries.org/workshop_faq/#what-are-the-roles-of-everyone-participating-in-a-workshop">our Workshop FAQ</a>.
 </p>
 
-{% comment %}
 WHO CAN ATTEND?
 
 If you would like to specify who can attend the workshop,
@@ -286,11 +296,11 @@ CODE OF CONDUCT
 <h2 id="code-of-conduct">Code of Conduct</h2>
 
 <p>
-Everyone who participates in Carpentries activities is required to conform to the <a href="https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html">Code of Conduct</a>. This document also outlines how to report an incident if needed.
+Everyone who participates in activities related to the Bootcamp is required to conform to the <a href="https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html">Code of Conduct</a>.
 </p>
 
 <p class="text-center">
-  <a href="https://goo.gl/forms/KoUfO53Za3apOuOK2">
+  <a href="mailto:joseph.haley@cern.ch?subject=US-ATLAS Computing Bootcamp Code of Conduct Violation">
     <button type="button" class="btn btn-info">Report a Code of Conduct Incident</button>
   </a>
 </p>
@@ -323,6 +333,7 @@ We will use this <a href="{{ page.collaborative_notes }}">collaborative document
 {% comment %}
 SURVEYS - DO NOT EDIT SURVEY LINKS
 {% endcomment %}
+{% comment %}
 <h2 id="surveys">Surveys</h2>
 <p>Please be sure to complete these surveys before and after the workshop.</p>
 {% if site.carpentry == "incubator" %}
@@ -343,28 +354,14 @@ change the value of `carpentry` to `incubator`.
 {% endif %}
 
 <hr/>
-
+{% endcomment %}
 
 {% comment %}
 SCHEDULE
 
-Show the workshop's schedule.
-
-Small changes to the schedule can be made by modifying the
-`schedule.html` found in the `_includes` folder for your
-workshop type (`swc`, `lc`, or `dc`). Edit the items and
-times in the table to match your plans. You may also want to
-change 'Day 1' and 'Day 2' to be actual dates or days of the
-week.
-
-For larger changes, a blank template for a 4-day workshop
-(useful for online teaching for instance) can be found in
-`_includes/custom-schedule.html`. Add the times, and what
-you will be teaching to this file. You may also want to add
-rows to the table if you wish to break down the schedule
-further. To use this custom schedule here, replace the block
-of code below the Schedule `<h2>` header below with
-`{% include custom-schedule.html %}`.
+Show the workshop's schedule.  Edit the items and times in the table
+to match your plans.  You may also want to change 'Day 1' and 'Day
+2' to be actual dates or days of the week.
 {% endcomment %}
 
 <h2 id="schedule">Schedule</h2>
@@ -375,9 +372,8 @@ of code below the Schedule `<h2>` header below with
 {% include dc/schedule.html %}
 {% elsif site.carpentry == "lc" %}
 {% include lc/schedule.html %}
-{% elsif site.carpentry == "incubator" %}
-This workshop is teaching a lesson in [The Carpentries Incubator](https://carpentries-incubator.org/).
-Please check [the lesson homepage]({{ site.incubator_lesson_site }}) for a list of lesson sections and estimated timings.
+{% elsif site.carpentry == "atlas" %}
+{% include atlas/schedule.html %}
 {% endif %}
 
 {% comment %}
@@ -415,6 +411,8 @@ please preview your site before committing, and make sure to run
   Data Carpentry
   {% elsif site.carpentry == "lc" %}
   Library Carpentry
+  {% elsif site.carpentry == "atlas" %}
+  ATLAS
   {% endif %}
   workshop,
   you will need access to software as described below.
