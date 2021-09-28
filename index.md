@@ -377,13 +377,32 @@ to match your plans.  You may also want to change 'Day 1' and 'Day
 {% endif %}
 
 {% comment %}
-Edit/replace the text above if you want to include a schedule table.
-See the contents of the _includes/custom-schedule.html file for an example of
-how one of these schedule tables is constructed.
-{% endcomment %}
+SYLLABUS
 
-{% if site.pilot %}
-The lesson taught in this workshop is being piloted and a precise schedule is yet to be established. The workshop will include regular breaks. Please [contact the workshop organisers](#contact) if you would like more information about the planned schedule.
+Show what topics will be covered.
+
+1. If your workshop is R rather than Python, remove the comment
+around that section and put a comment around the Python section.
+2. Some workshops will delete SQL.
+3. Please make sure the list of topics is synchronized with what you
+intend to teach.
+4. You may need to move the div's with class="col-md-6" around inside
+the div's with class="row" to balance the multi-column layout.
+
+This is one of the places where people frequently make mistakes, so
+please preview your site before committing, and make sure to run
+'tools/check' as well.
+{% endcomment %}
+<h2 id="syllabus">Syllabus</h2>
+
+{% if site.carpentry == "swc" %}
+{% include swc/syllabus.html %}
+{% elsif site.carpentry == "dc" %}
+{% include dc/syllabus.html %}
+{% elsif site.carpentry == "lc" %}
+{% include lc/syllabus.html %}
+{% elsif site.carpentry == "atlas" %}
+{% include atlas/syllabus.html %}
 {% endif %}
 
 <hr/>
@@ -449,8 +468,6 @@ during the workshop.
 {% include dc/setup.html %}
 {% elsif site.carpentry == "lc" %}
 {% include lc/setup.html %}
-{% elsif site.carpentry == "incubator" %}
-Please check the "Setup" page of
-[the lesson site]({{ site.incubator_lesson_site }}) for instructions to follow
-to obtain the software and data you will need to follow the lesson.
+{% elsif site.carpentry == "atlas" %}
+{% include atlas/setup.html %}
 {% endif %}
