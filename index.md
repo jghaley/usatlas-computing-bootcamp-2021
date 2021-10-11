@@ -423,7 +423,7 @@ please preview your site before committing, and make sure to run
 <h2 id="setup">Setup</h2>
 
 <p>
-  To participate in a
+  To participate in this
   {% if site.carpentry == "swc" %}
   Software Carpentry
   {% elsif site.carpentry == "dc" %}
@@ -431,11 +431,24 @@ please preview your site before committing, and make sure to run
   {% elsif site.carpentry == "lc" %}
   Library Carpentry
   {% elsif site.carpentry == "atlas" %}
-  ATLAS
+  US ATLAS
   {% endif %}
   workshop,
-  you will need access to software as described below.
-  In addition, you will need an up-to-date web browser.
+  you will need access to software as described below.  
+  You will also need an account on the new UChicago Tier 3 Center, as well as an up-to-date web browser.
+</p>
+  
+<h3 id="uchicagoaccount">Getting UChicago Tier3 Account</h3>
+<p>
+The UChicago analysis facility has an account authorization protocol, so 
+use your institutional or CERN identity when signing up so that it is easier 
+to verify people's identity and keep track of information.
+
+Here are some of the instructions to star working on the facility: 
+https://usatlas.readthedocs.io/projects/af-docs/en/latest/sshlogin/ssh2UChicago/
+
+This page is still under construction and will have more information soon.
+If you have any question, please let us know!! :)
 </p>
 <p>
   We maintain a list of common issues that occur during installation as a reference for instructors
