@@ -450,7 +450,7 @@ to verify people's identity and keep track of information.
 </p>
 <p>
 Instructions to request an account and star working on the facility can be found here: <br>
-https://usatlas.readthedocs.io/projects/af-docs/en/latest/sshlogin/ssh2UChicago/<br>
+<a href="https://usatlas.readthedocs.io/projects/af-docs/en/latest/sshlogin/ssh2UChicago/">https://usatlas.readthedocs.io/projects/af-docs/en/latest/sshlogin/ssh2UChicago/</a><br>
 This page is still under construction and will have more information soon.
 If you have any question, please let us know!! :)
 </p>
