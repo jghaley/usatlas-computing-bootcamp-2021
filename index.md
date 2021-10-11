@@ -443,10 +443,12 @@ please preview your site before committing, and make sure to run
 The UChicago analysis facility has an account authorization protocol, so 
 use your institutional or CERN identity when signing up so that it is easier 
 to verify people's identity and keep track of information.
-
+</p>
+<p>
 Here are some of the instructions to star working on the facility: 
 https://usatlas.readthedocs.io/projects/af-docs/en/latest/sshlogin/ssh2UChicago/
-
+</p>
+<p>
 This page is still under construction and will have more information soon.
 If you have any question, please let us know!! :)
 </p>
