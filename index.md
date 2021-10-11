@@ -436,6 +436,10 @@ please preview your site before committing, and make sure to run
   workshop,
   you will need access to software as described below.  
   You will also need an account on the new UChicago Tier 3 Center, as well as an up-to-date web browser.
+</p><p>
+  We maintain a list of common issues that occur during installation as a reference for instructors
+  that may be useful on the
+  <a href = "{{site.swc_github}}/workshop-template/wiki/Configuration-Problems-and-Solutions">Configuration Problems and Solutions wiki page</a>.
 </p>
   
 <h3 id="uchicagoaccount">Getting UChicago Tier3 Account</h3>
@@ -445,17 +449,10 @@ use your institutional or CERN identity when signing up so that it is easier
 to verify people's identity and keep track of information.
 </p>
 <p>
-Here are some of the instructions to star working on the facility: 
-https://usatlas.readthedocs.io/projects/af-docs/en/latest/sshlogin/ssh2UChicago/
-</p>
-<p>
+Instructions to request an account and star working on the facility can be found here: <br>
+https://usatlas.readthedocs.io/projects/af-docs/en/latest/sshlogin/ssh2UChicago/<br>
 This page is still under construction and will have more information soon.
 If you have any question, please let us know!! :)
-</p>
-<p>
-  We maintain a list of common issues that occur during installation as a reference for instructors
-  that may be useful on the
-  <a href = "{{site.swc_github}}/workshop-template/wiki/Configuration-Problems-and-Solutions">Configuration Problems and Solutions wiki page</a>.
 </p>
 
 {% comment %}
