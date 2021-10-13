@@ -199,7 +199,7 @@ Modify the block below if there are any special requirements.
   <em>
     <strong>
       <font color="red">
-      All work will be carried out on the UChicago Analysis Facilty.  Before the start of the workshop, you must create an account on the UChicago Analysis Facilty (instructions <a href="#setup">below</a>) and be able to ssh into the UChicago system.</br>
+      All work will be carried out on the UChicago Analysis Facilty.  Before the start of the workshop, you must create an account on the UChicago Analysis Facilty (instructions <a href="#setup">below</a>) and be able to ssh into the UChicago system.<br>
       Visit our <a href="https://atlas-talk.web.cern.ch/">ATLAS Discourse Forum at CERN</a> (do not confuse with discord 👾) and go to <a href="https://atlas-talk.web.cern.ch/c/us-tier-3-user-support/11">US Tier3 User Support</a> for support and friendly discussion . 
       </font>
     </strong>
