@@ -207,7 +207,7 @@ Modify the block below if there are any special requirements.
   </em>
 </p>
 
-
+{% comment % }
 Modify the block below if there are any special requirements.
 {% endcomment %}
 <p id="letsplay">
