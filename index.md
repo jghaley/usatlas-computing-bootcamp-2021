@@ -212,8 +212,7 @@ Modify the block below if there are any special requirements.
 {% endcomment %}
 <p id="letsplay">
   <strong>Let's play!! :</strong>
-  
-    Let's hang out chatting and playing some minigames at <a href="https://gather.town/app/F4f6d04qYezrqh4q/US%20ATLAS%20Bootcamp%202021"> Gather Town</>
+  Let's hang out chatting and playing some minigames at <a href="https://gather.town/app/F4f6d04qYezrqh4q/US%20ATLAS%20Bootcamp%202021"> Gather Town</>
 </p>
 
 {% comment %}
