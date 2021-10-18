@@ -22,6 +22,7 @@ instructor: [
 "Karol Krizka",
 "Amber Roepe",
 "Henry Schreiner",
+Elodie Resseguie,
 ]
 helper: [
 "Danika MacDonell",
